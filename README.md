@@ -80,6 +80,48 @@ sleep 5
 whoami
 ```
 
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/aae2b115276118ace8cbb73d2f1e45b6a17c35de/img/15.png" alt="Header">
+</p>
+
+На скриншоте видно, что у нас пока что одна Job 'MyJobNumber1'
+
+```bash
+cd /var/lib/jenkins/workspace/
+ll
+```
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/aae2b115276118ace8cbb73d2f1e45b6a17c35de/img/16.png" alt="Header">
+</p>
+
+На скриншоте можно увидеть количество сборок
+
+```bash
+cd  /var/lib/jenkins/jobs/MyJobNumber1
+ll
+cd builds
+ll
+```
+
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/aae2b115276118ace8cbb73d2f1e45b6a17c35de/img/17.png" alt="Header">
+</p>
+
+Можно в настройках поставить функцию удаления сборок и ограничить до 5 по количеству
+
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/aae2b115276118ace8cbb73d2f1e45b6a17c35de/img/18.png" alt="Header">
+</p>
+
+Сделаем сборку ещё раз и увидим, что сохраняет последние 5
+
+
+
+
+
+
+
+
 
 
 
