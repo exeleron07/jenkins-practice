@@ -176,7 +176,7 @@ echo "-----------Test Finished--------------------"
   <img src="https://github.com/exeleron07/jenkins-practice/blob/37f203f34d1d6cb8b9910bf68da40b62696cbe50/img/24.png" alt="Header">
 </p>
 
-Тест прошёл успешно. Deploy to prod
+Тест прошёл успешно. Deploy to prod проходит аналогично, но на данный момент в России наблюдаются ограничения и из-за этого я не могу использовать AWS. Решением выступает использовать Yandex Cloud
 
 
 
