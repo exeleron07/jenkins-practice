@@ -153,6 +153,30 @@ EOF
 echo "---------------Build Started-----------------"
 ```
 
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/37f203f34d1d6cb8b9910bf68da40b62696cbe50/img/23.png" alt="Header">
+</p>
+
+Теперь как мы это протестируем? Мы просто будем искать слово “Hello” в нашем файле. Если один раз есть в файле, то тест прошёл, если меньше или больше, то не прошёл. Можно по желанию добавить любые свои проверки для теста, но суть не меняется.
+
+```bash
+echo "-------------Test Started-------------------"
+result=`grep "Hello" index.html | wc-l`
+echo $result
+  if [ "$result" = "1" ]
+  then
+    echo "Test Passed"
+  else
+    echo "Test Failed"
+    exit 1
+fi
+echo "-----------Test Finished--------------------"
+```
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/37f203f34d1d6cb8b9910bf68da40b62696cbe50/img/24.png" alt="Header">
+</p>
+
+Тест прошёл успешно. Deploy to prod
 
 
 
