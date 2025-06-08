@@ -115,17 +115,43 @@ ll
 
 Сделаем сборку ещё раз и увидим, что сохраняет последние 5
 
+## Приступаю к работе
 
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/d59c9fbc31b8aae437285b566326fd6f4a831bdd/img/19.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/d59c9fbc31b8aae437285b566326fd6f4a831bdd/img/20.png" alt="Header">
+</p>
 
+Создаём Deploy-to-TEST
 
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/d59c9fbc31b8aae437285b566326fd6f4a831bdd/img/21.png" alt="Header">
+</p>
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/d59c9fbc31b8aae437285b566326fd6f4a831bdd/img/22.png" alt="Header">
+</p>
 
+Сгенерировал свою Web-страничку index.html. Что он делает? Создаёт файл index.html, обычная страничка, которая пишет “Hello from Exeleron-IT” желтыми буковками и голубыми буквами “www.exeleron-it.net”. В общем самый простой билд. EOF (End Of File) — это маркер, используемый в heredoc (Here Document) — специальной конструкции в shell-скриптах для передачи многострочного текста в команду или файл. В нашем скрипте он применяется для создания HTML-файла
 
+```bash
+echo "---------------Build Started-----------------"
+cat <<EOF> index.html
+<html>
+<body bgcolor=black>
+<center>
+<h2><font color=yellow>Hello from Exeleron-IT</font></h2>
 
+<font color=blue>www.exeleron-it.net</font>
 
+</center>
+</body>
+</html>
+EOF
 
-
-
-
+echo "---------------Build Started-----------------"
+```
 
 
 
