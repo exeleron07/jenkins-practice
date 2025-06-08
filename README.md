@@ -14,3 +14,20 @@ Credentials в Jenkins — это безопасные данные, храня�
 <p align="center">
   <img src="https://github.com/exeleron07/jenkins-practice/blob/5d387d6ba53050b91c462566ef16dc4b740af82e/img/2.png" alt="Header">
 </p>
+
+<p align="center">
+  <img src="https://github.com/exeleron07/jenkins-practice/blob/87c6a35dd2bcc8974594611ca71955f6dae73505/img/3.png" alt="Header">
+</p>
+
+Показываю все установленные плагины:
+
+```bash
+cd /var/lib/jenkins/plugins
+ls
+```
+
+
+
+
+
+
